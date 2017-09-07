@@ -12,9 +12,10 @@
       <link rel="stylesheet" href="css/main.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+      <script src="https://use.fontawesome.com/ad0793a279.js"></script>
     </head>
     <body>
-    
-    <?php include("footer.php") ?>
+  
+    <?php include("webpage/footer.php") ?>
 
         
