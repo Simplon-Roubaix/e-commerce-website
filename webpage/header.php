@@ -26,7 +26,7 @@
         <nav>
           <div class="card-panel grey lighten-1 nav-wrapper white-text">
             <a href="#!" class="divLogo brand-logo ">
-              <img class="logo" src="img/logo.png" alt="logo entreprise">
+              <!-- <img class="logo" src="img/logo.png" alt="logo entreprise"> -->
               <span>PhoneHouse</span>
             </a>
             <ul class="right hide-on-med-and-down">
