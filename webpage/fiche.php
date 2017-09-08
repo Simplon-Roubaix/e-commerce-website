@@ -2,31 +2,31 @@
 // On crée notre array $fichesproduits
 $fichesproduits = array (
     '1' => array(
-      'titre' => '',
-      'description_courte' => '',
+      'titre' => 'titre1',
+      'description_courte' => 'BLABLABLA',
       'resume' => '',
-      'prix' => '',
+      'prix' => '2',
       'srcImageProduit' = ''
       ),
     '2' => array(
-      'titre' => '',
-      'description_courte' => '',
+      'titre' => 'titre',
+      'description_courte' => 'blablablou',
       'resume' => '',
-      'prix' => '',
+      'prix' => '5',
       'srcImageProduit' = ''
       ),
     '3' => array(
-      'titre' => '',
-      'description_courte' => '',
+      'titre' => 'titre',
+      'description_courte' => 'blablablou',
       'resume' => '',
-      'prix' => '',
+      'prix' => '5',
       'srcImageProduit' = ''
       ),
     '4' => array(
-      'titre' => '',
-      'description_courte' => '',
+      'titre' => 'titre',
+      'description_courte' => 'blablablou',
       'resume' => '',
-      'prix' => '',
+      'prix' => '5',
       'srcImageProduit' = ''
       )
     );
