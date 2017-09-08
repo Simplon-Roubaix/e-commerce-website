@@ -2,11 +2,11 @@
           <div class="container">
             <div class="row" id="Divfooter">
               <div class="col s6">
-                <h5 class="white-text">nomDuSite</h5>
+                <h5 class="white-text">PhoneHouse</h5>
               </div>
               <div class="col s6">
               <div class="col s12">
-                <h5 class="white-text" id="ContactText">Social</h5>
+                <h5 class="white-text">Social</h5>
               </div>
               <div class="col s12" id="DivSocial">  
                   <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
