@@ -1,11 +1,3 @@
-
-<<<<<<< HEAD
-  
- <?php include("webpage/header.php");?>
- <?php include("webpage/footer.php");?>
-
-        
-=======
 <?php
 include("webpage/header.php");
 ?>
@@ -45,4 +37,3 @@ for ($nbrTour = 0; $nbrTour < 16 ; $nbrTour++ ) {
  </main>
 
  <?php include("webpage/footer.php") ?>
->>>>>>> master
