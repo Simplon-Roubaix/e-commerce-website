@@ -3,7 +3,7 @@
 include("webpage/header.php");
 ?>
 
-<main>
+<main id="articles">
 
 <?php
 
@@ -15,21 +15,21 @@ for ($nbrTour = 0; $nbrTour < 12 ; $nbrTour++ ) {
 
 
   <div class="row">
-     <div class="col s12 m3">
+     <div class="">
        <div class="card">
          <div class="card-image">
-           <img src="<?=$fichesproduits[$IndiceRandomProduit]['srcImageProduit']?>">
+           <img src="<?=$fichesproduits[$IndiceRandomProduit]['srcImageProduit']?>" class="packshot" alt="illustration produit">
            <span class="card-title"><?=$fichesproduits[$IndiceRandomProduit]['titre']?></span>
          </div>
          <div class="card-content">
            <p><?=$fichesproduits[$IndiceRandomProduit]['resume']?></p>
          </div>
          <div class="card-action">
-           <a href="ficheproduit.php" class="<?=$fichesproduits[$IndiceRandomProduit]['classDansLink']?>">En savoir plus</a>
+           <a href="<?=$fichesproduits[$IndiceRandomProduit]['url']?>">En savoir plus <span class="tagprice"> <?=$fichesproduits[$IndiceRandomProduit]['prix']?>€</span></a>
          </div>
        </div>
      </div>
-   </div>;
+   </div>
 
 
 <?php

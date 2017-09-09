@@ -99,22 +99,6 @@ html{
   background-color: #fafafa;
 }
 
-#foot{
-  bottom: 0;
-  position: fixed;
-  width: 100vw;
-  background-color: #bdbdbd;
-}
-
-
-#social{
-  margin-left: 5px;
-  margin-right: 5px;
-}
- 
-#Divfooter{
-text-align: center;
-}
 
 .logo {
   width: 150px;
@@ -148,6 +132,43 @@ nav {
   min-height: 20vh;
 }
 
+
+/* ==========================================================================
+   MAIN PART ON INDEX
+  ========================================================================== */
+
+#articles {
+  display: flex;
+  border: 1px solid red;
+  flex-flow: row wrap;
+}
+
+#articles > div {
+  max-width: 300px!important;
+}
+
+
+/* ==========================================================================
+   FOOTER
+  ========================================================================== */
+
+
+#foot{
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  background-color: #bdbdbd;
+}
+
+
+#social{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#Divfooter{
+  text-align: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -158,4 +179,3 @@ nav {
 
 .hidden {
     display: none !important;
-
