@@ -24,27 +24,27 @@
       <!-- beginning of the header  -->
       <header>
         <nav>
-          <div class="card-panel grey lighten-1 nav-wrapper white-text">
-            <a href="#!" class="divLogo brand-logo ">
-              <!-- <img class="logo" src="img/logo.png" alt="logo entreprise"> -->
-              <span>PhoneHouse</span>
+          <div class="card-panel nav-wrapper">
+            <a href="#!" class="divLogo brand-logo">
+              <img class="logo" src="img/roof.png" alt="logo entreprise">
+              <h1><span class="part1h1 grey-text text-darken-1">Phone </span><span class="fontSpecial red-text text-lighten-2">House</span></h1>
             </a>
             <ul class="right hide-on-med-and-down">
               <li>
                 <a href="#">
-                  <i class="material-icons">search</i>
+                  <i class="material-icons grey-text text-darken-2">search</i>
                   <!-- //mettre un input pour simuler recherche -->
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="material-icons">person</i>
+                  <i class="material-icons grey-text text-darken-2">person</i>
                   <!-- //mettre un toggle pour s'enregistrer et sidentifier -->
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="material-icons">local_grocery_store</i>
+                  <i class="material-icons grey-text text-darken-2">local_grocery_store</i>
                 </a>
               </li>
             </ul>

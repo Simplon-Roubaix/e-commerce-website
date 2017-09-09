@@ -1,3 +1,7 @@
+@font-face {
+ font-family: "techno";
+ src: url("../doc/Technocracy.ttf");
+}
 
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -106,25 +110,38 @@ html{
    ========================================================================== */
 
 .logo {
-  width: 150px;
-  right: -15px;
-  top: -20px;
-  /*z-index: 0;*/
+  width: 240px;
   position: absolute;
-  -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
-  transform: rotate(15deg);
+  left: -50px;
+  top: -10px;
+}
 
+.fontSpecial {
+  font-family: "techno";
+  /*font-weight: bold;*/
 }
 
 .divLogo {
-  font-size: 50px!important;
   position: relative;
-  margin: 20px;
-  text-shadow: 0px 1px 2px darkgrey;
+  margin: 0px 20px;
+  /*text-shadow: 0px 1px 2px darkgrey;*/
+  /*border: 1px solid red;*/
 }
 
-.divLogo span {
+.divLogo h1 {
   position: relative;
+  font-size: 55px;
+  top: -3px;
+  /*text-shadow: 0px 1px 0px grey;*/
+}
+
+.part1h1 {
+  letter-spacing: -8px;
+  font-weight: lighter;
+}
+
+h1::first-letter {
+  font-size: 72px;
 }
 
 /*pour suppimer le gap en haut de la page */
@@ -182,7 +199,7 @@ nav {
 
 
 #foot{
-  
+
   width: 100vw;
   background-color: #bdbdbd;
 }

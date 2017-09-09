@@ -8,7 +8,7 @@ include("webpage/header.php");
 <?php
 
 include("webpage/tableau.php");
-for ($nbrTour = 0; $nbrTour < 16 ; $nbrTour++ ) {
+for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {
   $IndiceRandomProduit = rand(1,4); //pour choisir un des articles au hasard
 ?>
 
