@@ -219,10 +219,10 @@ nav {
 
   .logo {
     display: block;
-    width: 240px;
+    width: 120px;
     position: absolute;
-    left: -50px;
-    top: -10px;
+    left: -15px;
+    top: 10px;
   }
 
 

@@ -26,7 +26,7 @@
         <nav>
           <div class="card-panel nav-wrapper">
             <a href="#!" class="divLogo brand-logo">
-              <img class="logo" src="img/roof.png" alt="logo entreprise">
+              <img class="logo" src="img/logo.png" alt="logo entreprise">
               <h1><span class="part1h1 grey-text text-darken-1">Phone</span><span class="fontSpecial red-text text-lighten-2">House</span></h1>
             </a>
             <ul class="right hide-on-med-and-down">
