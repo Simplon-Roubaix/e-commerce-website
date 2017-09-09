@@ -18,13 +18,13 @@ for ($nbrTour = 0; $nbrTour < 16 ; $nbrTour++ ) {
        <div class="card">
          <div class="card-image">
            <img src="<?=$fichesproduits[$IndiceRandomProduit]['srcImageProduit']?>" class="packshot" alt="illustration produit">
-           <span class="card-title"><?=$fichesproduits[$IndiceRandomProduit]['titre']?></span>
+           <span class="card-title red-text text-lighten-2"><?=$fichesproduits[$IndiceRandomProduit]['titre']?></span>
          </div>
          <div class="card-content">
            <p><?=$fichesproduits[$IndiceRandomProduit]['resume']?></p>
          </div>
-         <div class="card-action">
-           <a href="<?=$fichesproduits[$IndiceRandomProduit]['url']?>">En savoir plus <span class="tagprice"> <?=$fichesproduits[$IndiceRandomProduit]['prix']?>€</span></a>
+         <div class="card-action grey darken-2 white-text">
+           <a class="white-text" href="<?=$fichesproduits[$IndiceRandomProduit]['url']?>">En savoir plus <span class="tagprice red lighten-2"> <?=$fichesproduits[$IndiceRandomProduit]['prix']?>€</span></a>
          </div>
        </div>
      </div>
