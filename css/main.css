@@ -110,39 +110,28 @@ html{
    ========================================================================== */
 
 .logo {
-  width: 240px;
-  position: absolute;
-  left: -50px;
-  top: -10px;
+  display: none;
 }
 
 .fontSpecial {
   font-family: "techno";
-  /*font-weight: bold;*/
 }
 
 .divLogo {
   position: relative;
-  margin: 0px 20px;
-  /*text-shadow: 0px 1px 2px darkgrey;*/
-  /*border: 1px solid red;*/
+  height: auto;
+  top: 0px;
 }
 
 .divLogo h1 {
   position: relative;
-  font-size: 55px;
-  top: -3px;
-  /*text-shadow: 0px 1px 0px grey;*/
+  font-size : 35px;
 }
 
 .part1h1 {
-  letter-spacing: -8px;
   font-weight: lighter;
 }
 
-h1::first-letter {
-  font-size: 72px;
-}
 
 /*pour suppimer le gap en haut de la page */
 .nav-wrapper {
@@ -150,7 +139,7 @@ h1::first-letter {
 }
 
 nav {
-  min-height: 20vh;
+  min-height: 80px;
 }
 
 /* ==========================================================================
@@ -180,6 +169,7 @@ nav {
   font-size: 25px;
   font-weight: bold;
 }
+
 .card .card-content {
   padding: 0px 10px;
   min-height: 100px;
@@ -214,13 +204,47 @@ nav {
   text-align: center;
 }
 
+
+
+
+
+
+
+
 /* ==========================================================================
-   Helper classes
+   MEDIA QUERY
    ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
+@media (min-width: 640px) {
 
-.hidden {
-    display: none !important;
+  .logo {
+    display: block;
+    width: 240px;
+    position: absolute;
+    left: -50px;
+    top: -10px;
+  }
+
+
+  .divLogo {
+    top: 15px;
+  }
+
+  .divLogo h1 {
+    font-size: 45px;
+    top: 12px;
+  }
+
+  .part1h1 {
+    letter-spacing: -5px;
+  }
+
+  h1::first-letter {
+    font-size: 72px;
+  }
+
+  nav {
+    min-height: 140px;
+  }
+
+}
