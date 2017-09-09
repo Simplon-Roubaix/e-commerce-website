@@ -100,8 +100,6 @@ html{
 }
 
 #foot{
-  bottom: 0;
-  position: fixed;
   width: 100vw;
   background-color: #bdbdbd;
 }
@@ -158,4 +156,3 @@ nav {
 
 .hidden {
     display: none !important;
-

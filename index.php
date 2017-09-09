@@ -1,26 +1,6 @@
 
   
-<?php
-include("webpage/header.php");
-?>
- <?php include("webpage/footer.php") ?>
+ <?php include("webpage/header.php");?>
+ <?php include("webpage/footer.php");?>
 
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
