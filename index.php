@@ -1,4 +1,3 @@
-
 <?php
 include("webpage/header.php");
 ?>
@@ -6,33 +5,37 @@ include("webpage/header.php");
 <main id="articles">
 
 <?php
-
 include("webpage/tableau.php");
-for ($nbrTour = 0; $nbrTour < 16 ; $nbrTour++ ) {
-  $IndiceRandomProduit = rand(1,4); //pour choisir un des articles au hasard
-?>
 
+
+
+foreach ($fichesproduits as $key => $value) :?>
+<?php for ($i=0; $i < 4 ; $i++) :
+  $IndiceRandomProduit = rand(1,4)?>
+  
 
   <div class="row">
      <div>
        <div class="card">
          <div class="card-image">
-           <img src="<?=$fichesproduits[$IndiceRandomProduit]['srcImageProduit']?>" class="packshot" alt="illustration produit">
-           <span class="card-title red-text text-lighten-2"><?=$fichesproduits[$IndiceRandomProduit]['titre']?></span>
+           <img src="<?=$value['srcImageProduit']?>" class="packshot" alt="illustration produit">
+           <span class="card-title red-text text-lighten-2"><?=$value['titre']?></span>
          </div>
          <div class="card-content">
-           <p><?=$fichesproduits[$IndiceRandomProduit]['resume']?></p>
+           <p><?=$value['resume']?></p>
          </div>
-         <div class="card-action grey darken-2 white-text">
-           <a class="white-text" href="<?=$fichesproduits[$IndiceRandomProduit]['url']?>">En savoir plus <span class="tagprice red lighten-2"> <?=$fichesproduits[$IndiceRandomProduit]['prix']?>€</span></a>
-         </div>
+         <form  class="card-action grey darken-2 white-text" method="post">
+          <input type="hidden" name="id[]" value="<?php echo $id_fichesproduits ?>">
+          <a class="white-text" href="ficheproduits.php?id=<?=$key?>">En savoir plus <span class="tagprice red lighten-2"> <?=$value['prix']?>€</span></a>
+        </form>
        </div>
      </div>
    </div>
 
+  
+<?php endfor; ?>
 
-<?php
-} // je ferme ma boucle for
+<?php endforeach; // je ferme ma boucle for
 ?>
 
  </main>
