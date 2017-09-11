@@ -8,12 +8,11 @@ include("webpage/header.php");
 <?php
 
 include("webpage/tableau.php");
+
 for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {
   $IndiceRandomProduit = rand(1,4); //pour choisir un des articles au hasard
 ?>
-
-
-  <div class="row">
+<div class="row">
      <div>
        <div class="card">
          <div class="card-image">
