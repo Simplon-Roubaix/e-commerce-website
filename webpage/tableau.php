@@ -6,7 +6,7 @@ $fichesproduits = array (
       'description' => 'L’Apple iPhone 7 affiche une diagonale de 4,7 pouces, comme l\'iPhone 6 et 6s avant lui. Mais il bénéficie de la technologie Retina HD qui améliore l\'affichage. Pour la première fois, il embarque également un processeur à quatre cœurs, l\'A10 Fusion. En plus de son capteur photo principal de 12 Mpixels avec stabilisation optique, il intègre un capteur 7 Mpixels en façade.',
       'resume' => 'Memorabile mirum quodam quodam agi est mirum quodam plebem videre ardore plebem infuso curulium videre.',
       'prix' => '570',
-      'srcImageProduit' => 'img/iphone7gold.jpg',
+      'srcImageProduit' => 'img/iphone7.png',
       'url' => 'ficheproduits.php?'
       ),
     '2' => array(

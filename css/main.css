@@ -209,14 +209,17 @@ nav {
 /* ==========================================================================
   Ficheproduit
    ========================================================================== */
+   
+   
+   
 #ImgDetail{
-  height: 60vh !important ;
+  /*height: 60vh !important ;*/
 }
 .detail_Card{
   width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .HeadDetail_Card > h2{
@@ -230,11 +233,20 @@ nav {
   background-color: #E57373;
 }
 
+a{
+  color: #fafafa;
+}
 
+#Main{
+display: flex;
+flex-flow: column nowrap;
+min-height: 75vh;
+}
 
-
-
-
+#descriptionAndPrice{
+  border-style: solid;
+    border-color: #ff0000 #0000ff;
+}
 
 
 /* ==========================================================================
