@@ -11,7 +11,6 @@ foreach ($fichesproduits as $key => $value) :?>
   $IndiceRandomProduit = rand(1,4)?>
   
 
-
   <div class="row">
      <div>
        <div class="card">
