@@ -1,3 +1,7 @@
+@font-face {
+ font-family: "techno";
+ src: url("../doc/Technocracy.ttf");
+}
 
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -109,26 +113,28 @@ html{
    ========================================================================== */
 
 .logo {
-  width: 150px;
-  right: -15px;
-  top: -20px;
-  /*z-index: 0;*/
-  position: absolute;
-  -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
-  transform: rotate(15deg);
+  display: none;
+}
 
+.fontSpecial {
+  font-family: "techno";
 }
 
 .divLogo {
-  font-size: 50px!important;
   position: relative;
-  margin: 20px;
-  text-shadow: 0px 1px 2px darkgrey;
+  height: auto;
+  top: 0px;
 }
 
-.divLogo span {
+.divLogo h1 {
   position: relative;
+  font-size : 35px;
 }
+
+.part1h1 {
+  font-weight: lighter;
+}
+
 
 /*pour suppimer le gap en haut de la page */
 .nav-wrapper {
@@ -136,7 +142,7 @@ html{
 }
 
 nav {
-  min-height: 20vh;
+  min-height: 80px;
 }
 
 /* ==========================================================================
@@ -166,6 +172,7 @@ nav {
   font-size: 25px;
   font-weight: bold;
 }
+
 .card .card-content {
   padding: 0px 10px;
   min-height: 100px;
@@ -185,7 +192,7 @@ nav {
 
 
 #foot{
-  
+
   width: 100vw;
   background-color: #bdbdbd;
 }
@@ -223,13 +230,47 @@ nav {
   background-color: #E57373;
 }
 
+
+
+
+
+
+
+
 /* ==========================================================================
-   Helper classes
+   MEDIA QUERY
    ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
+@media (min-width: 640px) {
 
-.hidden {
-    display: none !important;
+  .logo {
+    display: block;
+    width: 120px;
+    position: absolute;
+    left: -15px;
+    top: 10px;
+  }
+
+
+  .divLogo {
+    top: 15px;
+  }
+
+  .divLogo h1 {
+    font-size: 45px;
+    top: 12px;
+  }
+
+  .part1h1 {
+    letter-spacing: -5px;
+  }
+
+  h1::first-letter {
+    font-size: 72px;
+  }
+
+  nav {
+    min-height: 140px;
+  }
+
+}

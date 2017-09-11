@@ -6,11 +6,11 @@ include("webpage/header.php");
 
 <?php
 include("webpage/tableau.php");
+
 foreach ($fichesproduits as $key => $value) :?>
 <?php for ($i=0; $i < 4 ; $i++) :
   $IndiceRandomProduit = rand(1,4)?>
   
-
 
   <div class="row">
      <div>
