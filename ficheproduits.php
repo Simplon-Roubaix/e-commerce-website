@@ -8,7 +8,7 @@
       <h2><?php echo $fichesproduits[$key]['titre']; ?></h2>
       <img id="ImgDetail"src="<?php echo $fichesproduits[$key]['srcImageProduit']; ?>" alt="<?php echo $fichesproduits[$key]['titre']; ?>" class="col-12 mx-auto">
     </div>
-  <div class="">
+  <div>
     <p class="text-justify"><?php echo $fichesproduits[$key]['description']; ?></p>
     <p><?php echo $fichesproduits[$key]['prix']; ?>€</p>
   </div>
