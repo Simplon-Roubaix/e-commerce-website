@@ -28,7 +28,7 @@
       <header>
         <nav>
           <div class="card-panel nav-wrapper">
-            <a href="#!" class="divLogo brand-logo">
+            <a href="index.php" class="divLogo brand-logo">
               <img class="logo" src="img/logo.png" alt="logo entreprise">
               <h1><span class="part1h1 grey-text text-darken-1">Phone</span><span class="fontSpecial red-text text-lighten-2">House</span></h1>
             </a>
@@ -59,12 +59,13 @@
                 <!-- Modal Structure -->
                 <div id="login" class=" red lighten-2 modal bottom-sheet">
                   <div class="modal-content">
-                    <h4>M'enregistrer</h4>
-                    <form class="" action="article.php" method="post">
-
+                    <a href="#!" class="closed modal-action modal-close waves-effect waves-green btn-flat">X</a>
+                    <h4>Me connecter</h4>
+                    <form class="login" action="article.php" method="post">
+                      <label for="pseudo"><span>Votre pseudo : </span><input type="text" name="pseudo" value=""></label> <br>
+                      <label for="mdp"><span>Votre mot de passe :</span> <input type="password" name="mdp" value=""></label> <br>
+                      <input class="btn grey darken-2" type="submit" name="" value="Valider">
                     </form>
-                    <a href="#!" class="text-light modal-action modal-close waves-effect waves-green btn-flat">Fermer</a>
-
                   </div>
                 </div>
               </li>
