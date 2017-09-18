@@ -21,6 +21,9 @@
 
     <body>
 
+
+
+
       <!-- beginning of the header  -->
       <header>
         <nav>
@@ -47,7 +50,26 @@
                   <i class="material-icons grey-text text-darken-2">local_grocery_store</i>
                 </a>
               </li>
+              <li>
+                <!-- Modal Trigger -->
+                <a class="modal-trigger" data-target="login" href="#login">
+                  <i class="material-icons grey-text text-darken-2">web</i>
+                </a>
+
+                <!-- Modal Structure -->
+                <div id="login" class=" red lighten-2 modal bottom-sheet">
+                  <div class="modal-content">
+                    <h4>M'enregistrer</h4>
+                    <form class="" action="article.php" method="post">
+
+                    </form>
+                    <a href="#!" class="text-light modal-action modal-close waves-effect waves-green btn-flat">Fermer</a>
+
+                  </div>
+                </div>
+              </li>
             </ul>
+
           </div>
         </nav>
       </header>

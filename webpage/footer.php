@@ -8,10 +8,10 @@
               <div class="col s12">
                 <h5 class="white-text">Social</h5>
               </div>
-              <div class="col s12" id="DivSocial">  
+              <div class="col s12" id="DivSocial">
                   <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
                   <i class="fa fa-twitter-square fa-2x"id="social" aria-hidden="true"></i>
-                  <i class="fa fa-git-square fa-2x" aria-hidden="true"></i>               
+                  <i class="fa fa-git-square fa-2x" aria-hidden="true"></i>
               </div>
              </div>
             </div>
@@ -19,7 +19,7 @@
           <div class="footer-copyright">
             <div class="container">
             Simplon © 2017 Copyright
-            
+
             </div>
           </div>
         </footer>
