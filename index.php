@@ -8,12 +8,11 @@ include("webpage/header.php");
 <?php
 
 include("webpage/tableau.php");
+
 for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {
   $IndiceRandomProduit = rand(1,4); //pour choisir un des articles au hasard
 ?>
-
-
-  <div class="row">
+<div class="row">
      <div>
        <div class="card">
          <div class="card-image">
@@ -24,7 +23,7 @@ for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {
            <p><?=$fichesproduits[$IndiceRandomProduit]['resume']?></p>
          </div>
          <div class="card-action grey darken-2 white-text">
-           <a class="white-text" href="<?=$fichesproduits[$IndiceRandomProduit]['url']?>?id=<?=$IndiceRandomProduit?>">En savoir plus <span class="tagprice red lighten-2"> <?=$fichesproduits[$IndiceRandomProduit]['prix']?>€</span></a>
+           <a class="white-text" href="<?=$fichesproduits[$IndiceRandomProduit]['url']?>id=<?=$IndiceRandomProduit?>">En savoir plus <span class="tagprice red lighten-2"> <?=$fichesproduits[$IndiceRandomProduit]['prix']?>€</span></a>
          </div>
        </div>
      </div>

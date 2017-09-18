@@ -11,7 +11,7 @@
       <title>e-commerce-website</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="logo.ico" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -20,6 +20,9 @@
     </head>
 
     <body>
+
+
+
 
       <!-- beginning of the header  -->
       <header>
@@ -47,7 +50,26 @@
                   <i class="material-icons grey-text text-darken-2">local_grocery_store</i>
                 </a>
               </li>
+              <li>
+                <!-- Modal Trigger -->
+                <a class="modal-trigger" data-target="login" href="#login">
+                  <i class="material-icons grey-text text-darken-2">web</i>
+                </a>
+
+                <!-- Modal Structure -->
+                <div id="login" class=" red lighten-2 modal bottom-sheet">
+                  <div class="modal-content">
+                    <h4>M'enregistrer</h4>
+                    <form class="" action="article.php" method="post">
+
+                    </form>
+                    <a href="#!" class="text-light modal-action modal-close waves-effect waves-green btn-flat">Fermer</a>
+
+                  </div>
+                </div>
+              </li>
             </ul>
+
           </div>
         </nav>
       </header>

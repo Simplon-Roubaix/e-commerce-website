@@ -8,10 +8,10 @@
               <div class="col s12">
                 <h5 class="white-text">Social</h5>
               </div>
-              <div class="col s12" id="DivSocial">  
-                  <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
-                  <i class="fa fa-twitter-square fa-3x"id="social" aria-hidden="true"></i>
-                  <i class="fa fa-git-square fa-3x" aria-hidden="true"></i>               
+              <div class="col s12" id="DivSocial">
+                  <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-twitter-square fa-2x"id="social" aria-hidden="true"></i>
+                  <i class="fa fa-git-square fa-2x" aria-hidden="true"></i>
               </div>
              </div>
             </div>
@@ -19,11 +19,12 @@
           <div class="footer-copyright">
             <div class="container">
             Simplon © 2017 Copyright
-            
+
             </div>
           </div>
         </footer>
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
