@@ -55,19 +55,6 @@
                 <a class="modal-trigger" data-target="login" href="#login">
                   <i class="material-icons grey-text text-darken-2">web</i>
                 </a>
-
-                <!-- Modal Structure -->
-                <div id="login" class=" red lighten-2 modal bottom-sheet">
-                  <div class="modal-content">
-                    <a href="#!" class="closed modal-action modal-close waves-effect waves-green btn-flat">X</a>
-                    <h4>Me connecter</h4>
-                    <form class="login" action="article.php" method="post">
-                      <label for="pseudo"><span>Votre pseudo : </span><input type="text" name="pseudo" value=""></label> <br>
-                      <label for="mdp"><span>Votre mot de passe :</span> <input type="password" name="mdp" value=""></label> <br>
-                      <input class="btn grey darken-2" type="submit" name="" value="Valider">
-                    </form>
-                  </div>
-                </div>
               </li>
             </ul>
 
