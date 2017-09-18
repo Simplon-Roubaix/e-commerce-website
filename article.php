@@ -1,7 +1,4 @@
 <?php include("webpage/header.php");?>
-<?php if (isset($_GET['submission']) && $_GET['submission'] == 'ok' ): ?>
-
-<?php endif; ?>
 
 <div class="container-fluid valign-wrapper" id="AddRemove">
  <div class="row" id="rowAddRemove">
@@ -34,7 +31,17 @@
   </div>
   
   
-  
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+    </div>
+    <form class="" action="article_.php" method="post">
+      <input type="select" name="article" class="form-control" placeholder="Titre">
+        <button class="btn waves-effect waves-light red lighten-2">Submit
+    </form>
+    <div class="modal-footer">
+      <a class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
     
     
     
