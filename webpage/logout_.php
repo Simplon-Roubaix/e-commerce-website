@@ -1,10 +1,16 @@
-<?php
+<?php session_start();
 
-if ($_POST['deconnexion'] ==  'oui') {
-  //on destroy valeur de session
 
+var_dump($_POST['deconnexion']);
+
+if ($_POST['deconnexion'] == 'oui') {
+ session_destroy();
+ header('Location: ../index.php');
+} else {
+  header('Location: ../article.php');
 }
 
-// et on redirige vers article
+
+
 
  ?>

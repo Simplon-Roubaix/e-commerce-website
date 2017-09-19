@@ -1,6 +1,7 @@
 <?php
 session_start();
-$_SESSION['match'];
+// $_SESSION['match'];
+
 
 if ((isset($_POST['pseudo']) AND isset($_POST['mdp'])) OR $_SESSION['match'] == 'oui') {
 
@@ -20,7 +21,7 @@ if ((isset($_POST['pseudo']) AND isset($_POST['mdp'])) OR $_SESSION['match'] == 
 
     while ($test= $verif->fetch())
     {
-      if ($_SESSION['match'] == 'oui' OR ($test['pseudo'] == htmlspecialchars($_POST['pseudo']) AND $test['mdp'] == sha1($_POST['mdp']))) {
+      if (isset($_SESSION['match']) OR ($test['pseudo'] == htmlspecialchars($_POST['pseudo']) AND $test['mdp'] == sha1($_POST['mdp']))) {
         $_SESSION['match'] = "oui";
 
         include("webpage/header.php");
