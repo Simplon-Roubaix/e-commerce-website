@@ -1,8 +1,3 @@
-<?php
-
-// faire l'ouverture de session pour les super variables
- ?>
-
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -51,14 +46,3 @@
                   <i class="material-icons grey-text text-darken-2">local_grocery_store</i>
                 </a>
               </li>
-              <li>
-                <!-- Modal Trigger -->
-                <a class="modal-trigger" data-target="login" href="#login">
-                  <i class="material-icons grey-text text-darken-2">web</i>
-                </a>
-              </li>
-            </ul>
-
-          </div>
-        </nav>
-      </header>
