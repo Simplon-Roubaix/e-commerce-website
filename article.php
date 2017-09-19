@@ -1,4 +1,22 @@
+<?php 
+   try{ 
+     $bdd = new PDO('mysql:host=localhost;dbname=Ecommerce;charset=utf8', 'root', 'root');
+     $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+   } 
+   catch(PDOException $e){ 
+      echo $e->getMessage(); 
+   } 
+   
+   
+ $article = $bdd->prepare("SELECT * FROM article");
+ $article->execute();
+ $donnee_article = $article->fetchAll(); ?>
+
+
+
+
 <?php include("webpage/header.php");?>
+
 
 <div class="container-fluid valign-wrapper" id="AddRemove">
  <div class="row" id="rowAddRemove">
@@ -7,6 +25,26 @@
  </div>   
 </div>
 
+
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <?php foreach ($donnee_article as $key => $value) : ?>
+      <p class="suppArticleP">
+        
+      <input type="hidden" name="idD" value="<?php echo $value->id ?>">
+      <input  class="inputTitre" name="idTitre" value="<?php echo $value->titre ?>" readonly>
+      <a class="btn waves-effect waves-light red lighten-2" href="articleSupp.php?id=<?php echo $value->id ?>">del</a>
+  
+    </p>
+      
+    <?php endforeach ;  ?>
+    
+  </div>
+  <div class="modal-footer">
+    <a class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
 
   
   <div id="modal1" class="modal">
@@ -17,7 +55,6 @@
             <textarea name="description" class="form-control" placeholder="description" required></textarea>
             <input  name="resume" type="text" class="form-control" placeholder="resume" required>
             <input  name="prix" type="number" class="form-control" placeholder="prix" required>
-            <input  name="url" type="text" class="form-control" placeholder="url"required>
             <input type="file" name="image" class="form-control" >
             <button class="btn waves-effect waves-light red lighten-2">Submit
               <i class="material-icons right">send</i>
@@ -31,17 +68,7 @@
   </div>
   
   
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-    </div>
-    <form class="" action="article_.php" method="post">
-      <input type="select" name="article" class="form-control" placeholder="Titre">
-        <button class="btn waves-effect waves-light red lighten-2">Submit
-    </form>
-    <div class="modal-footer">
-      <a class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-  </div>
+  
     
     
     

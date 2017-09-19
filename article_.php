@@ -12,16 +12,16 @@
    $description = strip_tags($_POST["description"]);
    $resume = strip_tags($_POST["resume"]);
    $prix = ($_POST["prix"]);   
-   $url = strip_tags($_POST["url"]);
+  
    
-   if (isset($_POST["titre"])&& isset($_POST["description"])&& isset($_POST["resume"]) && isset($_POST["prix"]) && isset($_POST["url"])) {
-     $req = $bdd->prepare('INSERT INTO article (titre,description,resume,prix,url) VALUES(:titre,:description,:resume,:prix,:url)');
+   if (isset($_POST["titre"])&& isset($_POST["description"])&& isset($_POST["resume"]) && isset($_POST["prix"])) {
+     $req = $bdd->prepare('INSERT INTO article (titre,description,resume,prix) VALUES(:titre,:description,:resume,:prix)');
      $req->execute(array(
        'titre' => $titre,
        'description' => $description,
        'resume' => $resume,
-       'prix' => $prix,
-       'url' => $url
+       'prix' => $prix
+       
        
      ));
    }

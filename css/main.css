@@ -249,11 +249,21 @@ min-height: 75vh;
 #rowAddRemove{
   margin: 0;
   width: 80vw;
-display: flex;
+  display: flex;
 }
 
-button{
-  background-color: #bdbdbd;
+#FormSupp{
+  text-align: center;
+}
+
+.suppArticleP{
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.inputTitre{
+      width: 75% !important; 
 }
 
 /* ==========================================================================
