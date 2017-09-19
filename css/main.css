@@ -3,14 +3,6 @@
  src: url("../doc/Technocracy.ttf");
 }
 
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -145,6 +137,37 @@ nav {
   min-height: 80px;
 }
 
+
+
+/* ==========================================================================
+   FORM TO LOGIN
+  ========================================================================== */
+
+#login * {
+  color : white;
+  text-align: center;
+}
+
+#login .login span {
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+#login input {
+  max-width: 130px;
+}
+
+.closed {
+  position: absolute;
+  right : 50px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#login .valider {
+  background-color: white;
+  border: none;
+}
 /* ==========================================================================
    MAIN PART ON INDEX
   ========================================================================== */
@@ -192,7 +215,7 @@ nav {
 
 
 #foot {
-  width: 100vw;
+
   background-color: #bdbdbd;
 }
 
@@ -208,7 +231,7 @@ nav {
 /* ==========================================================================
   Ficheproduit
    ========================================================================== */
-   
+
 
 .detail_Card {
   width: 50vw;
@@ -238,8 +261,14 @@ flex-flow: column nowrap;
 min-height: 75vh;
 }
 
-
-
+/* ==========================================================================
+   ARTICLE.PHP
+   ========================================================================== */
+#formArticle{
+   width: 50vh;
+   margin: auto;
+   min-height: 62vh;
+}
 
 /* ==========================================================================
    MEDIA QUERY
