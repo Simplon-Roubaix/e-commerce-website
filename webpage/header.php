@@ -28,7 +28,7 @@
       <header>
         <nav>
           <div class="card-panel nav-wrapper">
-            <a href="#!" class="divLogo brand-logo">
+            <a href="index.php" class="divLogo brand-logo">
               <img class="logo" src="img/logo.png" alt="logo entreprise">
               <h1><span class="part1h1 grey-text text-darken-1">Phone</span><span class="fontSpecial red-text text-lighten-2">House</span></h1>
             </a>
@@ -55,18 +55,6 @@
                 <a class="modal-trigger" data-target="login" href="#login">
                   <i class="material-icons grey-text text-darken-2">web</i>
                 </a>
-
-                <!-- Modal Structure -->
-                <div id="login" class=" red lighten-2 modal bottom-sheet">
-                  <div class="modal-content">
-                    <h4>M'enregistrer</h4>
-                    <form class="" action="article.php" method="post">
-
-                    </form>
-                    <a href="#!" class="text-light modal-action modal-close waves-effect waves-green btn-flat">Fermer</a>
-
-                  </div>
-                </div>
               </li>
             </ul>
 

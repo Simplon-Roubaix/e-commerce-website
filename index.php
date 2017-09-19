@@ -1,12 +1,16 @@
-
 <?php
+session_start(); // On démarre la session AVANT toute chose
+
 include("webpage/header.php");
+include("webpage/login.php");
+
 ?>
 
 <main id="articles">
 
 <?php
 
+// var_dump($_SESSION['match']);
 include("webpage/tableau.php");
 
 for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {
@@ -28,8 +32,6 @@ for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {
        </div>
      </div>
    </div>
-
-
 <?php
 } // je ferme ma boucle for
 ?>
