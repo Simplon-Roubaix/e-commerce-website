@@ -18,7 +18,7 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            Simplon © 2017 Copyright
+            Farrah & Taslim for Simplon © 2017 Copyright
 
             </div>
           </div>

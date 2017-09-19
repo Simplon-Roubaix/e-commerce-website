@@ -1,5 +1,5 @@
-
 <?php
+session_start(); // On démarre la session AVANT toute chose
 include("webpage/header.php");
 include("webpage/login.php");
 
@@ -30,9 +30,8 @@ for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {
        </div>
      </div>
    </div>
-
-
 <?php
+//var_dump($_SESSION['match']);
 } // je ferme ma boucle for
 ?>
 
