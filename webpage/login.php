@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (isset($_SESSION['match']))
+{
+  header('Location: article.php');
+}
+else
+{
+?>
+
 <!-- Modal Structure -->
 <div id="login" class=" red lighten-2 modal bottom-sheet">
   <div class="modal-content">
@@ -10,3 +21,9 @@
     </form>
   </div>
 </div>
+
+
+
+<?php
+} // fin du else
+?>

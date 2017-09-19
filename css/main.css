@@ -140,7 +140,7 @@ nav {
 
 
 /* ==========================================================================
-   FORM TO LOGIN
+   FORM TO LOGIN LOGOUT
   ========================================================================== */
 
 #login * {
@@ -168,6 +168,16 @@ nav {
   background-color: white;
   border: none;
 }
+
+#login .logout * {
+  margin-top: 5px;
+}
+
+[type="radio"]:checked + label::after, .with-gap[type="radio"]:checked + label::after {
+    background-color: white;
+    border: 2px solid rgb(229,115,115);
+}
+
 /* ==========================================================================
    MAIN PART ON INDEX
   ========================================================================== */
