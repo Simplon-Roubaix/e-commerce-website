@@ -264,10 +264,29 @@ min-height: 75vh;
 /* ==========================================================================
    ARTICLE.PHP
    ========================================================================== */
-#formArticle{
-   width: 50vh;
-   margin: auto;
+#AddRemove{
    min-height: 62vh;
+   background-color: #e57373 ;
+}
+
+#rowAddRemove{
+  margin: 0;
+  width: 80vw;
+  display: flex;
+}
+
+#FormSupp{
+  text-align: center;
+}
+
+.suppArticleP{
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.inputTitre{
+      width: 75% !important; 
 }
 
 /* ==========================================================================
