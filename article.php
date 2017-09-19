@@ -3,8 +3,6 @@ session_start();
 $_SESSION['match'];
 
 if ((isset($_POST['pseudo']) AND isset($_POST['mdp'])) OR $_SESSION['match'] == 'oui') {
-    // $pseudo = ;
-    // $mdp = ;
 
     // connexion à bdd
     try
