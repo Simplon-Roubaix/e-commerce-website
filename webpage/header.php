@@ -22,11 +22,14 @@
 
     <body>
 
+
+
+
       <!-- beginning of the header  -->
       <header>
         <nav>
           <div class="card-panel nav-wrapper">
-            <a href="#!" class="divLogo brand-logo">
+            <a href="index.php" class="divLogo brand-logo">
               <img class="logo" src="img/logo.png" alt="logo entreprise">
               <h1><span class="part1h1 grey-text text-darken-1">Phone</span><span class="fontSpecial red-text text-lighten-2">House</span></h1>
             </a>
@@ -48,7 +51,14 @@
                   <i class="material-icons grey-text text-darken-2">local_grocery_store</i>
                 </a>
               </li>
+              <li>
+                <!-- Modal Trigger -->
+                <a class="modal-trigger" data-target="login" href="#login">
+                  <i class="material-icons grey-text text-darken-2">web</i>
+                </a>
+              </li>
             </ul>
+
           </div>
         </nav>
       </header>
