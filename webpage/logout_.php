@@ -1,7 +1,6 @@
 <?php session_start();
 
-
-var_dump($_POST['deconnexion']);
+// var_dump($_POST['deconnexion']);
 
 if ($_POST['deconnexion'] == 'oui') {
  session_destroy();
@@ -9,8 +8,6 @@ if ($_POST['deconnexion'] == 'oui') {
 } else {
   header('Location: ../article.php');
 }
-
-
 
 
  ?>

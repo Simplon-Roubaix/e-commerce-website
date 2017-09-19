@@ -1,3 +1,10 @@
+<li>
+      <a class="modal-trigger" data-target="login" href="#login">
+        <i class="material-icons grey-text text-darken-2">web</i>
+      </a>
+</li>
+</ul>
+
 <!-- Modal Structure -->
 <div id="login" class="modal bottom-sheet">
   <div class="modal-content">
@@ -21,3 +28,7 @@
     </form>
   </div>
 </div>
+
+</div>
+</nav>
+</header>
