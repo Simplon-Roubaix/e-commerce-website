@@ -47,8 +47,8 @@ if ((isset($_POST['pseudo']) AND isset($_POST['mdp'])) OR $_SESSION['match'] == 
 
       <div class="container-fluid valign-wrapper" id="AddRemove">
        <div class="row" id="rowAddRemove">
-        <button class="waves-effect waves-light btn modal-trigger red lighten-2 col s3 " data-target="modal1">Add</button>
-        <button class="waves-effect waves-light btn modal-trigger red lighten-2 col s3 " data-target="modal2">remove</button>
+        <button class="waves-effect waves-light btn modal-trigger grey col s3 " data-target="modal1">Add</button>
+        <button class="waves-effect waves-light btn modal-trigger grey col s3 " data-target="modal2">remove</button>
        </div>
       </div>
 
@@ -119,7 +119,7 @@ if ((isset($_POST['pseudo']) AND isset($_POST['mdp'])) OR $_SESSION['match'] == 
     }
 
 
-    if ($_SESSION['match'] !== 'oui' OR $_SESSION['match'] !== undefined ) {
+    if (!isset($_SESSION['match'])) {
        header('Location: index.php');
     }
      ?>

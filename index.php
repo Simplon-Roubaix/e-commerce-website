@@ -11,7 +11,33 @@ include("webpage/header_index.php");
 
 <?php
 
-include("webpage/tableau.php");
+// pseudo code
+// lier la bdd
+// faire une jointure avec les tables article et image
+// faire boucle while
+// et y mettre le code déjà écrit
+// fermer la requete
+
+
+
+// connexion à bdd
+try
+{
+  $bdd = new PDO('mysql:host=localhost;dbname=Ecommerce;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}
+catch(Exception $e)
+{
+  die('Erreur : '.$e->getMessage());
+}
+
+$articles = $bdd->prepare('SELECT * FROM article') or die(print_r($bdd->errorInfo()));
+$articles->execute();
+
+
+
+
+
+
 
 for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {
   $IndiceRandomProduit = rand(1,4); //pour choisir un des articles au hasard
