@@ -11,13 +11,6 @@ include("webpage/header_index.php");
 
 <?php
 
-// pseudo code
-// lier la bdd
-// faire une jointure avec les tables article et image
-// faire boucle while
-// et y mettre le code déjà écrit
-// fermer la requete
-
 
 
 // connexion à bdd
@@ -30,36 +23,46 @@ catch(Exception $e)
   die('Erreur : '.$e->getMessage());
 }
 
-$articles = $bdd->prepare('SELECT * FROM article') or die(print_r($bdd->errorInfo()));
+
+
+// SELECT jeux_video.nom, proprietaires.prenom
+// FROM proprietaires, jeux_video
+// SELECT j.nom nom_jeu, p.prenom prenom_proprietaire
+// FROM proprietaires p
+// INNER JOIN jeux_video j
+// ON j.ID_proprietaire = p.ID
+
+// A FAIRE faire une jointure avec les tables article et image
+$articles = $bdd->prepare('SELECT article.resume as resume, article.titre as titre, article.id as id, article.prix as prix, img.name as nom FROM article INNER JOIN img ON img.article_id = article.id') or die(print_r($bdd->errorInfo()));
 $articles->execute();
 
 
 
-
-
-
-
-for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {
-  $IndiceRandomProduit = rand(1,4); //pour choisir un des articles au hasard
+// OK faire boucle while
+while ($article = $articles->fetch()) {
 ?>
 <div class="row">
      <div>
        <div class="card">
          <div class="card-image">
-           <img src="<?=$fichesproduits[$IndiceRandomProduit]['srcImageProduit']?>" class="packshot" alt="illustration produit">
-           <span class="card-title red-text text-lighten-2"><?=$fichesproduits[$IndiceRandomProduit]['titre']?></span>
+           <img src="img/<?=$article['nom']?>" class="packshot" alt="illustration produit">
+           <span class="card-title red-text text-lighten-2"><?=$article['titre']?></span>
          </div>
          <div class="card-content">
-           <p><?=$fichesproduits[$IndiceRandomProduit]['resume']?></p>
+           <p><?=$article['resume']?></p>
          </div>
          <div class="card-action grey darken-2 white-text">
-           <a class="white-text" href="<?=$fichesproduits[$IndiceRandomProduit]['url']?>id=<?=$IndiceRandomProduit?>">En savoir plus <span class="tagprice red lighten-2"> <?=$fichesproduits[$IndiceRandomProduit]['prix']?>€</span></a>
+           <a class="white-text" href="ficheproduits.php?id=<?=$article['id']?>">En savoir plus <span class="tagprice red lighten-2"> <?=$article['prix']?>€</span></a>
          </div>
        </div>
      </div>
    </div>
 <?php
-} // je ferme ma boucle for
+} // je ferme ma boucle while
+
+// OK fermer la requete
+$articles->closeCursor();
+
 ?>
 
  </main>
