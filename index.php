@@ -2,7 +2,8 @@
 session_start(); // On démarre la session AVANT toute chose
 
 include("webpage/header.php");
-include("webpage/login.php");
+include("webpage/header_index.php");
+// var_dump($_SESSION['deco']);
 
 ?>
 
@@ -10,7 +11,6 @@ include("webpage/login.php");
 
 <?php
 
-// var_dump($_SESSION['match']);
 include("webpage/tableau.php");
 
 for ($nbrTour = 0; $nbrTour < 15 ; $nbrTour++ ) {

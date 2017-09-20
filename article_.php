@@ -1,32 +1,33 @@
 <?php
 session_start();
+?>
 
 
-
-   try{
+   <?php 
+   try{ 
      $bdd = new PDO('mysql:host=localhost;dbname=Ecommerce;charset=utf8', 'root', 'root');
      $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-   }
-   catch(PDOException $e){
-      echo $e->getMessage();
-   }
-
+   } 
+   catch(PDOException $e){ 
+      echo $e->getMessage(); 
+   } 
+   
 
    $titre = strip_tags($_POST["titre"]);
    $description = strip_tags($_POST["description"]);
    $resume = strip_tags($_POST["resume"]);
-   $prix = ($_POST["prix"]);
-   $url = strip_tags($_POST["url"]);
-
-   if (isset($_POST["titre"])&& isset($_POST["description"])&& isset($_POST["resume"]) && isset($_POST["prix"]) && isset($_POST["url"])) {
-     $req = $bdd->prepare('INSERT INTO article (titre,description,resume,prix,url) VALUES(:titre,:description,:resume,:prix,:url)');
+   $prix = ($_POST["prix"]);   
+  
+   
+   if (isset($_POST["titre"])&& isset($_POST["description"])&& isset($_POST["resume"]) && isset($_POST["prix"])) {
+     $req = $bdd->prepare('INSERT INTO article (titre,description,resume,prix) VALUES(:titre,:description,:resume,:prix)');
      $req->execute(array(
        'titre' => $titre,
        'description' => $description,
        'resume' => $resume,
-       'prix' => $prix,
-       'url' => $url
-
+       'prix' => $prix
+       
+       
      ));
    }
    $article_id = $bdd->lastInsertId();
@@ -43,5 +44,5 @@ if (isset($_FILES["image"])) {
   ));
 }
 
-    header('Location: article.php?submission=ok');
+    header('Location: article.php?submission=ok');      
 ?>

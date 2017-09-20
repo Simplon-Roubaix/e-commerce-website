@@ -3,6 +3,7 @@
  src: url("../doc/Technocracy.ttf");
 }
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -140,7 +141,7 @@ nav {
 
 
 /* ==========================================================================
-   FORM TO LOGIN
+   FORM TO LOGIN LOGOUT
   ========================================================================== */
 
 #login * {
@@ -168,6 +169,16 @@ nav {
   background-color: white;
   border: none;
 }
+
+#login .logout * {
+  margin-top: 5px;
+}
+
+[type="radio"]:checked + label::after, .with-gap[type="radio"]:checked + label::after {
+    background-color: white;
+    border: 2px solid rgb(229,115,115);
+}
+
 /* ==========================================================================
    MAIN PART ON INDEX
   ========================================================================== */
@@ -264,10 +275,29 @@ min-height: 75vh;
 /* ==========================================================================
    ARTICLE.PHP
    ========================================================================== */
-#formArticle{
-   width: 50vh;
-   margin: auto;
+#AddRemove{
    min-height: 62vh;
+   background-color: #e57373 ;
+}
+
+#rowAddRemove{
+  margin: 0;
+  width: 80vw;
+  display: flex;
+}
+
+#FormSupp{
+  text-align: center;
+}
+
+.suppArticleP{
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.inputTitre{
+      width: 75% !important;
 }
 
 /* ==========================================================================

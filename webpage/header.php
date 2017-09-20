@@ -1,8 +1,3 @@
-<?php
-
-// faire l'ouverture de session pour les super variables
- ?>
-
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -15,6 +10,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js">
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/normalize.css">
     </head>
@@ -50,14 +46,3 @@
                   <i class="material-icons grey-text text-darken-2">local_grocery_store</i>
                 </a>
               </li>
-              <li>
-                <!-- Modal Trigger -->
-                <a class="modal-trigger" data-target="login" href="#login">
-                  <i class="material-icons grey-text text-darken-2">web</i>
-                </a>
-              </li>
-            </ul>
-
-          </div>
-        </nav>
-      </header>
