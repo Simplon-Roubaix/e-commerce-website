@@ -1,4 +1,5 @@
 <?php 
+session_start();
    try{ 
      $bdd = new PDO('mysql:host=localhost;dbname=Ecommerce;charset=utf8', 'root', 'root');
      $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
@@ -16,5 +17,6 @@
    $imageSupp = $bdd->prepare("DELETE FROM img WHERE id = ?");
    $imageSupp->execute(array ($_GET['id']));
    
+   $_SESSION['SUPP'] = "L'article a bien été supprimé."; 
    header('Location: article.php');
 ?>

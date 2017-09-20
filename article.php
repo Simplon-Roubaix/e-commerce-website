@@ -1,4 +1,7 @@
 <?php 
+session_start();
+
+
    try{ 
      $bdd = new PDO('mysql:host=localhost;dbname=Ecommerce;charset=utf8', 'root', 'root');
      $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
@@ -46,7 +49,23 @@
   </div>
 </div>
 
-  
+<?php if (isset($_SESSION['ADD'])) :?>
+    <div class="">
+        <span class="badge blue"><?php echo $_SESSION['ADD'] ?></span>
+    </div>
+    <?php unset($_SESSION['ADD']); ?>
+<?php endif ?>
+
+
+<?php if (isset($_SESSION['SUPP'])) :?>
+    <div class="">
+        <span class="badge red"><?php echo $_SESSION['SUPP'] ?></span>
+    </div>
+    <?php unset($_SESSION['SUPP']); ?>
+<?php endif ?>
+
+
+
   <div id="modal1" class="modal">
     <div class="modal-content">
       <div class="row">
@@ -56,7 +75,7 @@
             <input  name="resume" type="text" class="form-control" placeholder="resume" required>
             <input  name="prix" type="number" class="form-control" placeholder="prix" required>
             <input type="file" name="image" class="form-control" >
-            <button class="btn waves-effect waves-light red lighten-2">Submit
+            <button class="btn waves-effect waves-light red lighten-2">Sub
               <i class="material-icons right">send</i>
             </button>
           </form>         
@@ -68,8 +87,5 @@
   </div>
   
   
-  
-    
-    
-    
+ 
 <?php include("webpage/footer.php");?>

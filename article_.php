@@ -1,4 +1,5 @@
 <?php 
+session_start();
    try{ 
      $bdd = new PDO('mysql:host=localhost;dbname=Ecommerce;charset=utf8', 'root', 'root');
      $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
@@ -6,8 +7,7 @@
    catch(PDOException $e){ 
       echo $e->getMessage(); 
    } 
-   
-
+  
    $titre = strip_tags($_POST["titre"]);
    $description = strip_tags($_POST["description"]);
    $resume = strip_tags($_POST["resume"]);
@@ -38,6 +38,6 @@ if (isset($_FILES["image"])) {
 
   ));
 }
-
-    header('Location: article.php?submission=ok');      
+$_SESSION['ADD'] = "L'article a bien été ajouté.";
+header('Location: article.php');      
 ?>
